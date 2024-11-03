@@ -1,5 +1,5 @@
 #root {
-  background-color: #C1272D;
+  background-color: #9b0001;
   color: rgba(255, 255, 255, 0.87);
   max-width: 1280px;
   margin: 0 auto;
@@ -9,15 +9,20 @@
 
   display: flex;
   place-items: center;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .wrapper {
   width: 80vw;
   height: 100vh;
+
+
   /*background-color: #C1272D;*/
 
   display: flex;
-  place-items: center;
+/*  place-items: center;*/
+  align-items: center;
 }
 
 .snowContainer {

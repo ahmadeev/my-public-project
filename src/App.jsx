@@ -15,9 +15,9 @@ function App() {
           {/*<Navbar />*/}
           <Router basename="/my-public-project/">
               <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/ny" element={<CountDownToNewYear />} />
-                  <Route path="/vbd" element={<CountDownToVikasBirthday />} />
+                  <Route path="/" element={<Home pageTitle="Домашняя" />} />
+                  <Route path="/ny" element={<CountDownToNewYear pageTitle="Счётчик дней до Нового года" />} />
+                  <Route path="/vbd" element={<CountDownToVikasBirthday pageTitle="Счётчик дней до дня рождения Вики" />} />
               </Routes>
           </Router>
       </>

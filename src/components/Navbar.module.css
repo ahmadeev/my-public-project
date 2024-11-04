@@ -15,10 +15,15 @@
 }
 
 a {
+    color: #676b5d;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.active, .transitioning, .pending {
-    color: #ff0000;
+a:visited {
+    color: #676b5d;
+}
+
+a.active {
+    text-decoration: underline;
 }

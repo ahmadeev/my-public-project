@@ -1,13 +1,13 @@
 import {useEffect, useState} from 'react'
 import styles from './Timer.module.css'
 
-function Timer({ event, date_of_event_string }) {
+function Timer({ title, event, date_of_event_string }) {
     const date_of_event= new Date(date_of_event_string).getTime();
 
     const [time, setTime] = useState(new Date(date_of_event_string));
 
     useEffect(() => {
-        document.title = "Счетчик дней " + event.substring(0, event.length - 10);
+        document.title = title;
     })
 
     useEffect(() => {

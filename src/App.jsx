@@ -1,23 +1,25 @@
+
+
 import './App.css'
-import Timer from "./components/Timer.jsx";
-import Navbar from "./components/Navbar.jsx";
+import CountDownToNewYear from "./pages/CountDownToNewYear.jsx";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import CountDownToVikasBirthday from "./pages/CountDownToVikasBirthday.jsx";
+import Home from "./pages/Home.jsx";
 
 function App() {
 
+    // зеленые елки по краям
+
   return (
       <>
-          {/*{https://yraaa.ru/scripts/snow-css3}*/}
-          <div className="snowContainer">
-              <div id="snow"></div>
-          </div>
-
-
-          <div className="wrapper">
-              <Navbar />
-              <Timer
-                  event={"до Нового года осталось:"}
-                  date_of_event_string={`${new Date().getFullYear() + 1}-01-01T00:00:00.000Z`} />
-          </div>
+          {/*<Navbar />*/}
+          <Router basename="/my-public-project/">
+              <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/ny" element={<CountDownToNewYear />} />
+                  <Route path="/vbd" element={<CountDownToVikasBirthday />} />
+              </Routes>
+          </Router>
       </>
 
   )

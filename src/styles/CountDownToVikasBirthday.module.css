@@ -1,0 +1,17 @@
+.wrapper {
+    width: 80vw;
+    height: 100vh;
+
+    background-color: #ffffff;
+
+    display: flex;
+    /*  place-items: center;*/
+    align-items: center;
+    justify-content: center;
+
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    color: #686C5E;
+}

@@ -1,7 +1,7 @@
 import Timer from "../components/Timer.jsx";
 import Snow from "../components/Snow.jsx";
 
-import styles from "../styles/CountDownToNewYear.module.css";
+import styles from "../page-styles/CountDownToNewYear.module.css";
 import Navbar from "../components/Navbar.jsx";
 import {useEffect} from "react";
 

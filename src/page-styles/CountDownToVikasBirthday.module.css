@@ -1,20 +1,15 @@
 .wrapper {
     width: 80vw;
-    /*height: 100vh;*/
+    height: 100vh;
 
     background-color: #ffffff;
 
     display: flex;
-    /*  place-items: center;*/
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 
-
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     color: #686C5E;
-    height: auto;
-    margin-top: 10vh;
-
 }

@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar.jsx";
-import styles from "../styles/Home.module.css";
+import styles from "../page-styles/Home.module.css";
 import {useEffect} from "react";
 
 function Home({ pageTitle }) {
